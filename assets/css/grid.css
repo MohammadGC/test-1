@@ -1,0 +1,13 @@
+.header-container-menue {
+  display: grid;
+  justify-content: space-around;
+  grid-template-columns: auto auto;
+  align-content: center;
+  grid-gap: 10px;
+
+
+}
+
+.header-container-navbar {
+  grid-area: 1 / 1 / 2 / 2 !important;
+}
