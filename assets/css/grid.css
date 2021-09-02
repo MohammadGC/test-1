@@ -1,0 +1,57 @@
+header {
+  padding: 7rem 0; /* Creating distance from up and down*/
+  background-image: url("../images/header-bg.jpg"); /* Use background for header */
+  background-repeat: no-repeat; /* For no repeat background */
+  background-position: center center; /* Specify the start of the background position */
+  background-size: auto; /* Set up background size */
+  background-attachment: fixed;  /* For fixed background*/
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 925px){
+  header {
+    background-size: 100% 100%;
+  }
+}
+/* For container navbar */
+.header-container-menu {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  align-content: center;
+  grid-gap: 10px;
+}
+/* For reverse to nav with section .header-logo  */
+.header-container-navbar {
+  grid-area: 1 / 1 / 2 / 2 !important;
+}
+
+.header-container-navbar nav .container-menu ul li a {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.navbar-brand {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.header-logo h2 {
+  color: #ffffff;
+}
+
+.header-bottom {
+  margin-top: 10rem;
+}
+
+.header-bottom h1{
+  color: #fff;
+
+}
+.header-bottom p{
+  color: rgba(255,255,255,0.60);
+  line-height: 2rem;
+}
+.header-bottom button{
+  margin-top: 4rem;
+}
