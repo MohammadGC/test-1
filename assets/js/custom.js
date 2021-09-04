@@ -1,4 +1,4 @@
-$(".nav-item").click(function (e) {
+$(".nav-item").click(function () {
   $(".nav-item").siblings().removeClass("active");
   $(this).toggleClass("active");
 });
