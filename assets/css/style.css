@@ -4,11 +4,32 @@
   box-sizing: border-box;
 }
 
-.active{
+.active {
   background-color: #007bff;
   border-radius: 4px;
 }
-.navbar-toggler{
+.navbar-toggler {
   color: rgb(230 0 0 / 50%) !important;
-    border-color: rgb(225 0 0 / 10%) !important;
+  border-color: rgb(225 0 0 / 10%) !important;
+}
+
+/* main */
+.main-Description-item {
+  display: grid;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+.main-Description-item p{
+  text-align: center !important;
+
+}
+
+@media only screen and (min-width: 995px) {
+  .main-Description-item {
+    display: grid;
+    justify-content: center !important;
+    align-items: center !important;
+    justify-items: center !important;
+  }
 }
