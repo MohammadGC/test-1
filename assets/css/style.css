@@ -6,6 +6,7 @@
 
 .active{
   background-color: #007bff;
+  border-radius: 4px;
 }
 .navbar-toggler{
   color: rgb(230 0 0 / 50%) !important;
