@@ -2,17 +2,16 @@ header {
   padding: 7rem 0; /* Creating distance from up and down*/
   background-image: url("../images/header-bg.jpg"); /* Use background for header */
   background-repeat: no-repeat; /* For no repeat background */
-  background-position: center center; /* Specify the start of the background position */
-  background-size: auto; /* Set up background size */
-  background-attachment: fixed;  /* For fixed background*/
+  background-position: center ; /* Specify the start of the background position */
+  background-size: cover; /* Set up background size */
+  background-attachment: fixed; /* Set up For fixed background*/
   width: 100%;
-  height: auto;
-  overflow: hidden;
-}
+  height: 100vh;
 
-@media only screen and (min-width: 925px){
+}
+@media only screen and (min-width: 995px) {
   header {
-    background-size: 100% 100%;
+    height: 120vh;
   }
 }
 /* For container navbar */
@@ -44,14 +43,61 @@ header {
   margin-top: 10rem;
 }
 
-.header-bottom h1{
+.header-bottom h1 {
   color: #fff;
-
+  font-size: 27px;
 }
-.header-bottom p{
-  color: rgba(255,255,255,0.60);
+
+@media only screen and (max-width: 458px) {
+  .header-bottom h1 {
+    font-size: 20px;
+  }
+}
+.header-bottom p {
+  color: rgba(255, 255, 255, 0.6);
   line-height: 2rem;
 }
-.header-bottom button{
+.header-bottom button {
   margin-top: 4rem;
+}
+
+/* main */
+
+.main {
+  background-color: #ffffff;
+}
+
+.main-heading-Description {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 50px;
+}
+
+.main-header {
+  padding: 7rem 0 !important;
+  text-align: center;
+}
+
+.main-header-heading {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+
+@media only screen and (max-width: 995px) {
+  .main-heading-Description {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+  .main-header-heading h1{
+    font-size: 20px;
+    text-align: center;
+  }
+  .main-header-heading p{
+    font-size: 15px;
+    text-align: center;
+  }
+
 }
