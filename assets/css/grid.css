@@ -137,10 +137,35 @@ header {
   color: rgba(255, 255, 255, 0.8);
   border-bottom: 2px solid white !important;
   text-decoration: none !important;
-  transition: all 0.3s ;
+  transition: all 0.3s;
 }
 .main-footer-paragraphs p a:hover {
   color: rgba(255, 255, 255, 0.8);
   border: none !important;
-  
+}
+
+.footer {
+  background-color: #181818;
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container-footer {
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+.container-footer a{
+  color: rgba(255,255,255,0.6);
+}
+
+@media only screen and (max-width: 570px) {
+  .container-footer {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .container-footer {
+    font-size: 5px;
+  }
 }
