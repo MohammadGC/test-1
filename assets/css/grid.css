@@ -2,12 +2,11 @@ header {
   padding: 7rem 0; /* Creating distance from up and down*/
   background-image: url("../images/header-bg.jpg"); /* Use background for header */
   background-repeat: no-repeat; /* For no repeat background */
-  background-position: center ; /* Specify the start of the background position */
+  background-position: center; /* Specify the start of the background position */
   background-size: cover; /* Set up background size */
   background-attachment: fixed; /* Set up For fixed background*/
   width: 100%;
   height: 100vh;
-
 }
 @media only screen and (min-width: 995px) {
   header {
@@ -91,13 +90,57 @@ header {
     grid-template-columns: auto;
     gap: 50px;
   }
-  .main-header-heading h1{
+  .main-header-heading h1 {
     font-size: 20px;
     text-align: center;
   }
-  .main-header-heading p{
+  .main-header-heading p {
     font-size: 15px;
     text-align: center;
   }
+}
+.d-flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-footer {
+  background-color: #2651a8;
+  padding: 5rem 0;
+}
 
+.main-footer-titre h3 {
+  color: rgba(255, 255, 255, 0.8);
+}
+@media only screen and (max-width: 768px) {
+  .main-footer-titre h3 {
+    font-size: 20px;
+  }
+}
+.main-footer-titre p {
+  color: rgba(255, 255, 255, 0.6);
+}
+.main-footer-titre {
+  line-height: 2rem !important;
+}
+
+.main-footer-paragraphs p {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 2rem;
+}
+.main-footer-paragraphs button {
+  padding: 1rem 3.5rem;
+}
+.main-footer-paragraphs p a {
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 2px solid white !important;
+  text-decoration: none !important;
+  transition: all 0.3s ;
+}
+.main-footer-paragraphs p a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  border: none !important;
+  
 }
